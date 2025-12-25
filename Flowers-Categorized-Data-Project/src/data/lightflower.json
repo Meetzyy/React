@@ -1,0 +1,34 @@
+[
+    {
+      "id": 1,
+      "name": "Golden Daffodil",
+      "origin": "Europe",
+      "colors": ["Sun Yellow", "Soft Ivory"],
+      "season": "Early Spring",
+      "description": "A quiet sunrise captured in petals — gentle, hopeful, and full of new beginnings."
+    },
+    {
+      "id": 2,
+      "name": "Lavender Aster",
+      "origin": "Eurasia",
+      "colors": ["Pale Violet", "Golden Yellow"],
+      "season": "Late Summer",
+      "description": "Delicate yet confident, it feels like a soft memory blooming under open skies."
+    },
+    {
+      "id": 3,
+      "name": "White Gardenia",
+      "origin": "Tropical Asia",
+      "colors": ["Milky White", "Soft Green"],
+      "season": "Summer",
+      "description": "Pure silence in floral form — calm, graceful, and effortlessly timeless."
+    },
+    {
+      "id": 4,
+      "name": "Blush Orchid",
+      "origin": "Southeast Asia",
+      "colors": ["Blush Pink", "Pearl White"],
+      "season": "Spring",
+      "description": "Elegant and intimate, like a whispered emotion held gently in light."
+    }
+]

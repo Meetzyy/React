@@ -1,0 +1,59 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.navbar
+{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title
+{
+    font-size: 16px;
+    font-family: "synonym";
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding-top: 30px;
+}
+
+.links
+{
+    font-family: "halenoir";
+    font-size: 12px;
+    text-transform: uppercase;
+    display: flex;
+    gap: 20px;
+}
+
+.links a
+{
+    text-decoration: none;
+    color: white;
+    opacity: 100%;
+    transition: opacity 0.3s ease-out;
+}
+
+.links a:hover
+{
+    opacity: 70%; 
+}
+
+
+@font-face {
+    font-family: "synonym";
+    src: url("src\assets\Fonts\Synonym-Regular.otf");
+}
+
+@font-face {
+    font-family: "halenoir";
+    src: url("src\assets\Fonts\HalenoirCompactText-Thin.otf");
+}

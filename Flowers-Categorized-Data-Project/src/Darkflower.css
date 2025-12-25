@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Darkmain {
+  width: 1395px;
+  height: 663.5px;
+  position: relative;
+  background-color: #000;
+}
+
+.Darkcard {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.Dark1 {
+  width: 667.5px;
+  height: 380px;
+  top: 20px;
+  left: 20px;
+  background-image: url('D:\studies\Rnw Class\React\Flowers - Categorized Data Project\public\Images\Dark Flowers\Crimson Chrysanthemum.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Dark2 {
+  width: 667.5px;
+  height: 223.5px;
+  top: 20px;
+  right: 20px;
+  background-image: url('D:\studies\Rnw Class\React\Flowers - Categorized Data Project\public\Images\Dark Flowers\Midnight Hellebore.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Dark3 {
+  width: 667.5px;
+  height: 223.5px;
+  bottom: 20px;
+  left: 20px;
+  background-image: url('D:\studies\Rnw Class\React\Flowers - Categorized Data Project\public\Images\Dark Flowers\Amber Rose.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Dark4 {
+  width: 667.5px;
+  height: 380px;
+  bottom: 20px;
+  right: 20px;
+  background-image: url('D:\studies\Rnw Class\React\Flowers - Categorized Data Project\public\Images\Dark Flowers\Indigo Morning Glory.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Darkoverlay {
+  position: absolute;
+  inset: 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(
+    to top,
+    rgba(0,0, 0, 0.75),
+    rgba(0, 0, 0, 0.15)
+  );
+  color: #f2f2f2;
+}
+
+.Darkseason {
+  font-size: 14px;
+  letter-spacing: 1px;
+  opacity: 0.75;
+  margin-bottom: 6px;
+}
+
+.Darkname {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.Darkdescription {
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 90%;
+  opacity: 0.85;
+}
+
+.Darkmeta {
+  display: flex;
+  gap: 20px;
+  margin-top: 12px;
+  font-size: 12px;
+  opacity: 0.75;
+}

@@ -1,0 +1,136 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: black; */
+}
+.main
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+.title
+{
+   width: 60%;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-left: 5%;
+}
+.title .text1
+{
+    line-height: 300px;
+    font-family: 'Extenda' , sans-serif;
+    font-size: 300px;
+    color: black;
+}
+.title .text1 .span1
+{
+    line-height: 300px;
+    font-family: 'Extenda' , sans-serif;
+    font-size: 300px;
+    color: darkred;
+}
+.title .text2
+{
+    line-height: 300px;
+    font-family: 'Extenda' , sans-serif;
+    font-size: 300px;
+    color: black;
+}
+.title .text2 .span2
+{
+    line-height: 300px;
+    font-family: 'Extenda' , sans-serif;
+    font-size: 300px;
+    color: darkred;
+}
+
+.right
+{
+   width: 30%;
+   height: 640px;
+   display: flex;
+   flex-direction: column;
+   margin-right: 5%;
+   justify-content: end;
+}
+.right .digits
+{
+    width: 100%;
+    height: 300px;
+}
+.right .digits p
+{
+    font-family: 'Horizon', sans-serif;
+    font-size: 250px;
+}
+.right .buttons
+{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.right .buttons .plus
+{
+    width: 100px;
+    height: 100px;
+    font-family: 'Horizon', sans-serif;
+    font-size: 50px;
+    border: 5px solid black;
+    transition: 0.2s;
+}
+.right .buttons .plus:hover
+{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.right .buttons .minus
+{
+    width: 100px;
+    height: 100px;
+    font-family: 'Horizon', sans-serif;
+    font-size: 50px;
+    border: 5px solid black;
+    transition: 0.2s;
+}
+.right .buttons .minus:hover
+{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.right .buttons .reset
+{
+    width: 100px;
+    height: 100px;
+    font-family: 'Horizon', sans-serif;
+    font-size: 50px;
+    border: 5px solid black;
+    padding-top: 16px;
+    transition: 0.2s;
+}
+.right .buttons .reset:hover
+{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+
+
+@font-face {
+    font-family: 'Extenda' ;
+    src: url("D:\studies\Rnw Class\React\Counter Project\src\assets\fonts\Extenda 30 Deca.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Horizon';
+    src: url("D:\studies\Rnw Class\React\Counter Project\src\assets\fonts\horizon.otf") format('opentype');
+}

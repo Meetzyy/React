@@ -1,0 +1,194 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   ROOT LAYOUT
+========================= */
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+}
+
+/* =========================
+   HEADER
+========================= */
+.header {
+  height: 150px;
+  border-bottom: 1px solid rgba(253, 245, 201, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .title {
+  font-family: 'Minerva Modern', serif;
+  font-size: 32px;
+  color: #fdf5c9;
+  text-align: center;
+}
+
+.header .subtitle {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  color: #fdf5c9;
+  text-align: center;
+}
+
+/* =========================
+   CONTENT
+========================= */
+.content {
+  width: 100%;
+  padding: 60px 0 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+}
+
+/* =========================
+   SECTION TITLES
+========================= */
+.content .brands-title,
+.content .items-title {
+  position: relative;
+  font-family: 'Minerva Modern', serif;
+  font-size: 42px;
+  letter-spacing: 4px;
+  color: #fdf5c9;
+  padding-bottom: 16px;
+}
+
+.content .brands-title::after,
+.content .items-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 120px;
+  height: 1px;
+  background-color: rgba(253, 245, 201, 0.6);
+  transform: translateX(-50%);
+}
+
+/* =========================
+   GRID CONTAINERS
+========================= */
+.content .brands,
+.content .items {
+  width: 80%;
+  padding: 20px;
+  border: 1px solid rgba(253, 245, 201, 0.5);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* =========================
+   CARD BASE STYLE
+========================= */
+.content .brands > div,
+.content .items > div {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background-size: 110%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #fdf5c9;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-size 0.6s ease, box-shadow 0.4s ease;
+}
+
+/* Inner luxury frame */
+.content .brands > div::after,
+.content .items > div::after {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(253, 245, 201, 0.35);
+  pointer-events: none;
+}
+
+/* Dark overlay */
+.content .brands > div::before,
+.content .items > div::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.15)
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Title text */
+.content .brands > div p,
+.content .items > div p {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-family: 'Minerva Modern', serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #fdf5c9;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+
+/* Hover */
+.content .brands > div:hover,
+.content .items > div:hover {
+  background-size: 120%;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+}
+
+.content .brands > div:hover::before,
+.content .items > div:hover::before {
+  opacity: 1;
+}
+
+.content .brands > div:hover p,
+.content .items > div:hover p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+   BACKGROUND IMAGES
+========================= */
+.card1 { background-image: url("D:/studies/Rnw Class/React/Dual Lists Project/src/assets/Images/Furniture Brands/Boca Do Lobo.png"); }
+.card2 { background-image: url("D:/studies/Rnw Class/React/Dual Lists Project/src/assets/Images/Furniture Brands/Minotti.png"); }
+.card3 { background-image: url("D:/studies/Rnw Class/React/Dual Lists Project/src/assets/Images/Furniture Brands/Poliform.png"); }
+.card4 { background-image: url("D:/studies/Rnw Class/React/Dual Lists Project/src/assets/Images/Furniture Brands/Roche Bobois.png"); }
+
+.item1 { background-image: url("D:/studies/Rnw Class/React/Dual Lists Project/src/assets/Images/Furniture Items/Eames Lounge Chair & Ottoman.jpg"); }
+.item2 { background-image: url("D:/studies/Rnw Class/React/Dual Lists Project/src/assets/Images/Furniture Items/Egg Chair.jpg"); }
+.item3 { background-image: url("D:/studies/Rnw Class/React/Dual Lists Project/src/assets/Images/Furniture Items/Noguchi Coffee Table.jpg"); }
+.item4 { background-image: url("D:/studies/Rnw Class/React/Dual Lists Project/src/assets/Images/Furniture Items/Panton Chair.jpg"); }
+
+/* =========================
+   FONTS
+========================= */
+@font-face {
+  font-family: 'Minerva Modern';
+  src: url("D:/studies/Rnw Class/React/Dual Lists Project/src/assets/Fonts/minerva-modern.otf");
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url("D:/studies/Rnw Class/React/Dual Lists Project/src/assets/Fonts/RobotoSlab-Thin.ttf");
+}

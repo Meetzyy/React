@@ -1,0 +1,1268 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.content
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction
+{
+    width: 1352px;
+    height: 530px;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Introduction.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-size: 110%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.introduction-title
+{
+    font-size: 36px;
+    font-family: "synonym";
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.introduction-description
+{
+    font-family: "halenoir";
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.introduction:hover
+{
+    background-size: 100%;
+}
+
+.introduction:hover::before {
+    opacity: 0.9;
+}
+
+.introduction:hover .introduction-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.geography
+{
+    width: 1352px;
+    height: 620px;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Geography.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-size: 110%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.geography-title
+{
+    font-size: 36px;
+    font-family: "synonym";
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.geography-description
+{
+    font-family: "halenoir";
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.geography:hover
+{
+    background-size: 100%;
+}
+
+.geography:hover::before {
+    opacity: 0.9;
+}
+
+.geography:hover .geography-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.seasons
+{
+    width: 1352px;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.seasons-title
+{
+    font-size: 36px;
+    font-family: "synonym";
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.seasons-description
+{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.winter
+{
+    width: 385px;
+    height: 571px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Seasons Winter.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 190%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.winter-title
+{
+    font-size: 18px;
+    font-family: "synonym";
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.winter-description
+{
+    font-family: "halenoir";
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.winter:hover
+{
+    background-size: 180%;
+}
+
+.winter:hover::before {
+    opacity: 0.9;
+}
+
+.winter:hover .winter-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.summer
+{
+    width: 947.5px;
+    height: 351px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Seasons Summer.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 110%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.summer-title
+{
+    font-size: 18px;
+    font-family: "synonym";
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.summer-description
+{
+    font-family: "halenoir";
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.summer:hover
+{
+    background-size: 100%;
+}
+
+.summer:hover::before {
+    opacity: 0.9;
+}
+
+.summer:hover .summer-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.monsoon
+{
+    width: 947.5px;
+    height: 200px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Seasons Monsoon.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 110%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.monsoon-title
+{
+    font-size: 18px;
+    font-family: "synonym";
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.monsoon-description
+{
+    font-family: "halenoir";
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.monsoon:hover
+{
+    background-size: 100%;
+}
+
+.monsoon:hover::before {
+    opacity: 0.9;
+}
+
+.monsoon:hover .monsoon-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.attractions
+{
+    width: 1352px;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.attractions-title
+{
+    font-size: 36px;
+    font-family: "synonym";
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.attractions-description
+{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.hadimbadevitemple
+{
+    width: 385px;
+    height: 571px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Attractions Hadimba Devi Temple.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 235%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.hadimbadevitemple-title
+{
+    font-size: 18px;
+    font-family: "synonym";
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.hadimbadevitemple-description
+{
+    font-family: "halenoir";
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.hadimbadevitemple:hover
+{
+    background-size: 225%;
+}
+
+.hadimbadevitemple:hover::before {
+    opacity: 0.9;
+}
+
+.hadimbadevitemple:hover .hadimbadevitemple-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.manikarangurudwara
+{
+    width: 350px;
+    height: 275.5px;
+    top: 0px;
+    left: 405px;
+    position: absolute;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Attractions Manikaran Gurudwara.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 130%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.manikarangurudwara-title
+{
+    font-size: 18px;
+    font-family: "synonym";
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.manikarangurudwara-description
+{
+    font-family: "halenoir";
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.manikarangurudwara:hover
+{
+    background-size: 120%;
+}
+
+.manikarangurudwara:hover::before {
+    opacity: 0.9;
+}
+
+.manikarangurudwara:hover .manikarangurudwara-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.rohtangpass
+{
+    width: 577px;
+    height: 275.5px;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Attractions Rohtang Pass.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 112%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.rohtangpass-title
+{
+    font-size: 18px;
+    font-family: "synonym";
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.rohtangpass-description
+{
+    font-family: "halenoir";
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.rohtangpass:hover
+{
+    background-size: 102%;
+}
+
+.rohtangpass:hover::before {
+    opacity: 0.9;
+}
+
+.rohtangpass:hover .rohtangpass-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.solangvalley
+{
+    width: 577px;
+    height: 275.5px;
+    bottom: 0px;
+    left:  405px;
+    position: absolute;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Attractions Solang Valley.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 110%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.solangvalley-title
+{
+    font-size: 18px;
+    font-family: "synonym";
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.solangvalley-description
+{
+    font-family: "halenoir";
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.solangvalley:hover
+{
+    background-size: 100%;
+}
+
+.solangvalley:hover::before {
+    opacity: 0.9;
+}
+
+.solangvalley:hover .solangvalley-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.vashishthotsprings
+{
+    width: 350px;
+    height: 275.5px;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Attractions Vashisht Hot Springs.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 130%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.vashishthotsprings-title
+{
+    font-size: 18px;
+    font-family: "synonym";
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.vashishthotsprings-description
+{
+    font-family: "halenoir";
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.vashishthotsprings:hover
+{
+    background-size: 120%;
+}
+
+.vashishthotsprings:hover::before {
+    opacity: 0.9;
+}
+
+.vashishthotsprings:hover .vashishthotsprings-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+.adventures
+{
+    width: 1352px;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.adventures-title
+{
+    font-size: 36px;
+    font-family: "synonym";
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.adventures-description
+{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.paragliding
+{
+    width: 496px;
+    height: 350px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Adventures Paragliding.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 120%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.paragliding-title
+{
+    font-size: 18px;
+    font-family: "synonym";
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.paragliding-description
+{
+    font-family: "halenoir";
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.paragliding:hover
+{
+    background-size: 110%;
+}
+
+.paragliding:hover::before {
+    opacity: 0.9;
+}
+
+.paragliding:hover .paragliding-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.riding
+{
+    width: 320px;
+    height: 571px;
+    top: 0px;
+    left: 516px;
+    position: absolute;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Adventures Riding.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 110%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.riding-title
+{
+    font-size: 18px;
+    font-family: "synonym";
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.riding-description
+{
+    font-family: "halenoir";
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.riding:hover
+{
+    background-size: 100%;
+}
+
+.riding:hover::before {
+    opacity: 0.9;
+}
+
+.riding:hover .riding-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.riverrafting
+{
+    width: 496px;
+    height: 201px;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Adventures River Rafting.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 110%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.riverrafting-title
+{
+    font-size: 18px;
+    font-family: "synonym";
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.riverrafting-description
+{
+    font-family: "halenoir";
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.riverrafting:hover
+{
+    background-size: 100%;
+}
+
+.riverrafting:hover::before {
+    opacity: 0.9;
+}
+
+.riverrafting:hover .riverrafting-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skiing
+{
+    width: 496px;
+    height: 201px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Adventures Skiing.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 110%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.skiing-title
+{
+    font-size: 18px;
+    font-family: "synonym";
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.skiing-description
+{
+    font-family: "halenoir";
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.skiing:hover
+{
+    background-size: 100%;
+}
+
+.skiing:hover::before {
+    opacity: 0.9;
+}
+
+.skiing:hover .skiing-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.trekking
+{
+    width: 496px;
+    height: 350px;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Adventures Trekking.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 120%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.trekking-title
+{
+    font-size: 18px;
+    font-family: "synonym";
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.trekking-description
+{
+    font-family: "halenoir";
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.trekking:hover
+{
+    background-size: 110%;
+}
+
+.trekking:hover::before {
+    opacity: 0.9;
+}
+
+.trekking:hover .trekking-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.peopleandculture
+{
+    width: 1352px;
+    height: 620px;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\People.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-size: 110%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.peopleandculture-title
+{
+    font-size: 36px;
+    font-family: "synonym";
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.peopleandculture-description
+{
+    font-family: "halenoir";
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.peopleandculture:hover
+{
+    background-size: 100%;
+}
+
+.peopleandculture:hover::before {
+    opacity: 0.9;
+}
+
+.peopleandculture:hover .peopleandculture-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+.gallery
+{
+    width: 1352px;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.gallery-title
+{
+    font-size: 36px;
+    font-family: "synonym";
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.gallery-description
+{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.one
+{
+    width: 408px;
+    height: 350px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Gallery 1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.one:hover
+{
+    background-size: 100%;
+}
+
+.two
+{
+    width: 496px;
+    height: 330px;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Gallery 2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.two:hover
+{
+    background-size: 100%;
+}
+
+.three
+{
+    width: 408px;
+    height: 350px;
+    top: 0px;
+    left: 428px;
+    position: absolute;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Gallery 3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.three:hover
+{
+    background-size: 100%;
+}
+
+.four
+{
+    width: 836px;
+    height: 201px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Gallery 4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.four:hover
+{
+    background-size: 100%;
+}
+
+.five
+{
+    width: 496px;
+    height: 221px;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Gallery 5.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.five:hover
+{
+    background-size: 100%;
+}
+
+.gallery-2
+{
+    width: 1352px;
+    height: 620px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.six
+{
+    width: 476px;
+    height: 201px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Gallery 6.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.six:hover
+{
+    background-size: 100%;
+}
+
+.seven
+{
+    width: 340px;
+    height: 400px;
+    top: 0px;
+    left: 496px;
+    position: absolute;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Gallery 7.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 190%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.seven:hover
+{
+    background-size: 180%;
+}
+
+.eight
+{
+    width: 476px;
+    height: 400px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Gallery 8.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 140%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.eight:hover
+{
+    background-size: 130%;
+}
+
+.nine
+{
+    width: 340px;
+    height: 201px;
+    bottom: 0px;
+    left: 496px;
+    position: absolute;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Gallery 9.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.nine:hover
+{
+    background-size: 100%;
+}
+
+.ten
+{
+    width: 496px;
+    height: 621px;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Gallery 10.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.ten:hover
+{
+    background-size: 100%;
+}
+
+
+
+@font-face {
+    font-family: "synonym";
+    src: url("src\assets\Fonts\Synonym-Regular.otf");
+}
+
+@font-face {
+    font-family: "halenoir";
+    src: url("src\assets\Fonts\HalenoirCompactText-Thin.otf");
+}

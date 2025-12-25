@@ -1,0 +1,220 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main
+{
+    width: 100%;
+    height: 730px;
+    position: relative;
+}
+.main video
+{
+    position: absolute;
+    width: 100%;
+    height: 730px;
+    object-position: center;
+    object-fit: cover;
+}
+
+
+.banner
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    width: 800px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    border: 2px solid white;
+    box-shadow: black 0px 0px 30px;
+}
+
+
+.banner .header
+{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+
+.banner .header .backbtn
+{
+    position: absolute;
+    width: 250px;
+    height: 20px;
+}
+.banner .header .backbtn .lefticon
+{
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 11px;
+    left: 10px;
+}
+.banner .header .backbtn p
+{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+.banner .header .backbtn p::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.2s ease-in-out;
+}
+.banner .header .backbtn p:hover::after {
+    width: 100%;
+}
+
+
+.banner .header .heartbtn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.banner .header .heartbtn .heart {
+    color: white;
+    font-size: 16px;
+    transition: transform 0.2s ease;
+}
+
+.banner .header .heartbtn:hover .heart {
+    transform: scale(1.2);
+}
+
+
+.banner .image
+{
+    width: 400px;
+    height: 396px;
+    background-image: url("D:\studies\Rnw Class\React\Explorer Project\src\assets\Images\RM_3001_Model-removebg-preview.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner .description
+{
+    position: absolute; 
+    top: 40px;
+    right: 0;
+    width: 400px;
+    height: 356px;
+}
+
+.banner .description .name
+{
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 20px;
+}
+.banner .description .calibre
+{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 70px;
+}
+.banner .description .price
+{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 130px;
+}
+.banner .description .details
+{
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 170px;
+    width: 380px
+}
+.banner .description .btns
+{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.banner .description .btns .cartbtn
+{
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    border: 2px solid white;
+    cursor: pointer;
+    padding-top: 12px;
+    transition: 0.3s;
+}
+.banner .description .btns .cartbtn:hover
+{
+    background-color: white;
+    color: black;
+}
+.banner .description .btns .wishlistbtn
+{
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    border: 2px solid white;
+    cursor: pointer;
+    padding-top: 12px;
+    transition: 0.3s;
+}
+.banner .description .btns .wishlistbtn:hover
+{
+    background-color: white;
+    color: black;
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("D:\studies\Rnw Class\React\Explorer Project\src\assets\Fonts\BebasNeue-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("D:\studies\Rnw Class\React\Explorer Project\src\assets\Fonts\Montserrat-Regular.ttf") format('truetype');
+}

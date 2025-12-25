@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Lightmain {
+  width: 1395px;
+  height: 663.5px;
+  position: relative;
+  background-color: white;
+}
+
+.Lightcard {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.Light1 {
+  width: 667.5px;
+  height: 380px;
+  top: 20px;
+  left: 20px;
+  background-image: url('D:\studies\Rnw Class\React\Flowers - Categorized Data Project\public\Images\Light Flowers\Golden Daffodil.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Light2 {
+  width: 667.5px;
+  height: 223.5px;
+  top: 20px;
+  right: 20px;
+  background-image: url('D:\studies\Rnw Class\React\Flowers - Categorized Data Project\public\Images\Light Flowers\Lavender Aster.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Light3 {
+  width: 667.5px;
+  height: 223.5px;
+  bottom: 20px;
+  left: 20px;
+  background-image: url('D:\studies\Rnw Class\React\Flowers - Categorized Data Project\public\Images\Light Flowers\White Gardenia.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Light4 {
+  width: 667.5px;
+  height: 380px;
+  bottom: 20px;
+  right: 20px;
+  background-image: url('D:\studies\Rnw Class\React\Flowers - Categorized Data Project\public\Images\Light Flowers\Blush Orchid.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Lightoverlay {
+  position: absolute;
+  inset: 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0)
+  );
+  color: white;
+}
+
+.Lightseason {
+  font-size: 14px;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  margin-bottom: 6px;
+}
+
+.Lightname {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.Lightdescription {
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 90%;
+  opacity: 0.9;
+}
+
+.Lightmeta {
+  display: flex;
+  gap: 20px;
+  margin-top: 12px;
+  font-size: 12px;
+  opacity: 0.8;
+}

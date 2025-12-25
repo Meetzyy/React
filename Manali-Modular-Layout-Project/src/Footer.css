@@ -1,0 +1,71 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.footer
+{
+    width: 1352px;
+    height: 620px;
+    background-image: url("D:\studies\Rnw Class\React\Manali - Modular Layout Project\src\assets\Images\Outro.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-size: 110%;
+    overflow: hidden;
+    transition: background-size 0.8s ease, transform 0.6s ease;
+}
+
+.footer-title
+{
+    font-size: 36px;
+    font-family: "synonym";
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-description
+{
+    font-family: "halenoir";
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.footer:hover
+{
+    background-size: 100%;
+}
+
+.footer:hover::before {
+    opacity: 0.9;
+}
+
+.footer:hover .footer-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@font-face {
+    font-family: "synonym";
+    src: url("src\assets\Fonts\Synonym-Regular.otf");
+}
+
+@font-face {
+    font-family: "halenoir";
+    src: url("src\assets\Fonts\HalenoirCompactText-Thin.otf");
+}

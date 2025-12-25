@@ -1,0 +1,34 @@
+[
+    {
+      "id": 5,
+      "name": "Crimson Chrysanthemum",
+      "origin": "East Asia",
+      "colors": ["Deep Maroon", "Shadow Red"],
+      "season": "Autumn",
+      "description": "Bold and introspective — a flower that blooms where silence feels powerful."
+    },
+    {
+      "id": 6,
+      "name": "Midnight Hellebore",
+      "origin": "Europe",
+      "colors": ["Forest Green", "Charcoal Black"],
+      "season": "Winter",
+      "description": "Dark, rare, and poetic — beauty that survives even in cold stillness."
+    },
+    {
+      "id": 7,
+      "name": "Amber Rose",
+      "origin": "Middle East",
+      "colors": ["Burnt Orange", "Warm Gold"],
+      "season": "Autumn",
+      "description": "Warmth wrapped in shadow — a glowing ember in the quiet dark."
+    },
+    {
+      "id": 8,
+      "name": "Indigo Morning Glory",
+      "origin": "Central America",
+      "colors": ["Deep Indigo", "Violet Core"],
+      "season": "Summer",
+      "description": "A fleeting mystery — blooms briefly, but leaves a lasting emotion."
+    }
+]
