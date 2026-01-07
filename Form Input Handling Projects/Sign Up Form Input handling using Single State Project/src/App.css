@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* Layout */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Heading */
+h1 {
+  color: #e0f7fa;
+  font-size: 18px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* Form Card */
+form {
+  background: #ffffff;
+  width: 400px;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* Form Title */
+form h3 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 22px;
+  color: #004d40;
+}
+
+/* Labels */
+form h4 {
+  margin: 14px 0 6px;
+  font-size: 14px;
+  color: #00695c;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 11px 14px;
+  border-radius: 10px;
+  border: 1px solid #b2dfdb;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input:focus {
+  border-color: #26a69a;
+  box-shadow: 0 0 0 2px rgba(38, 166, 154, 0.25);
+}
+
+/* Gender */
+.gender-group {
+  display: flex;
+  gap: 18px;
+  margin-top: 6px;
+}
+
+.gender-group label {
+  font-size: 14px;
+  color: #004d40;
+  cursor: pointer;
+}
+
+/* Button */
+button {
+  width: 100%;
+  margin-top: 26px;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #26a69a, #00796b);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 121, 107, 0.5);
+}
