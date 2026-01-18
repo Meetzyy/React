@@ -1,0 +1,356 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0a0a;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* App Wrapper */
+.app {
+  padding: 60px 80px;
+}
+
+/* Hero Section */
+.hero {
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+
+.hero p {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #b5b5b5;
+}
+
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Filter */
+.filter-wrapper {
+  position: relative;
+}
+
+.filter-btn {
+  background: #111;
+  color: white;
+  border: 1px solid #333;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.filter-dropdown {
+  position: absolute;
+  top: 44px;
+  right: 0;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 50;
+}
+
+.filter-dropdown button {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  background: transparent;
+  color: white;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.filter-dropdown button:hover {
+  background: #222;
+}
+
+
+/* Buttons */
+.add-btn {
+  background: #d4af37;
+  color: #000;
+  border: none;
+  padding: 10px 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #c5a030;
+}
+
+.search-btn {
+  background: #111;
+  color: white;
+  border: 1px solid #333;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background: #222;
+}
+
+.back-btn {
+  margin-bottom: 20px;
+  background: none;
+  border: none;
+  color: #d4af37;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Loader */
+.loader {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+.loader h1 {
+  font-size: 28px;
+  letter-spacing: 3px;
+  color: #777;
+}
+
+/* Bento Grid */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 260px;
+  gap: 20px;
+}
+
+/* Card */
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #111;
+  cursor: pointer;
+  transition: transform 0.6s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* Large Card */
+.card-large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* Image */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.85);
+  transition: transform 0.8s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  padding: 24px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.overlay h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.overlay span {
+  margin-top: 8px;
+  display: inline-block;
+  font-size: 16px;
+  color: #d4af37;
+}
+
+/* Edit & Delete */
+.edit-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 6px 8px;
+  cursor: pointer;
+  border-radius: 6px;
+  z-index: 10;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 12px;
+  right: 50px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ff4d4d;
+  border: none;
+  padding: 6px 8px;
+  cursor: pointer;
+  border-radius: 6px;
+  z-index: 10;
+}
+
+/* Modal */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal {
+  background: #111;
+  padding: 24px;
+  width: 320px;
+  border-radius: 12px;
+  color: white;
+}
+
+.modal input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  background: #222;
+  border: 1px solid #333;
+  color: white;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.modal-actions button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.cart-btn {
+  position: relative;
+  background: #111;
+  color: white;
+  border: 1px solid #333;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: #d4af37;
+  color: #000;
+  font-size: 12px;
+  padding: 2px 7px;
+  border-radius: 50%;
+  font-weight: 700;
+  min-width: 20px;
+  text-align: center;
+}
+
+.cart-add-btn {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+  background: #d4af37;
+  color: #000;
+  border: none;
+  padding: 8px 14px;
+  font-size: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 5; /* KEY FIX */
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+
+/* No Results */
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-large {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 30px 20px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-large {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
