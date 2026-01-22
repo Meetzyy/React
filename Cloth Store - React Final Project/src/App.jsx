@@ -17,13 +17,11 @@ function App() {
     image: "",
   });
 
-  // 🔍 SEARCH
   const [showSearchModal, setShowSearchModal] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [isSearching, setIsSearching] = useState(false);
 
-  // 🛒 CART
   const [cartItems, setCartItems] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
 
@@ -48,7 +46,6 @@ function App() {
     );
   }
 
-  /* ================= EDIT ================= */
   const handleSave = () => {
     setProducts((prev) =>
       prev.map((item) =>
@@ -58,14 +55,12 @@ function App() {
     setEditingProduct(null);
   };
 
-  /* ================= DELETE ================= */
   const handleDelete = (id) => {
     setProducts((prev) => prev.filter((item) => item._id !== id));
     setFilteredProducts((prev) => prev.filter((item) => item._id !== id));
     setCartItems((prev) => prev.filter((item) => item._id !== id));
   };
 
-  /* ================= ADD PRODUCT ================= */
   const handleAddProduct = () => {
     if (!newProduct.title || !newProduct.price || !newProduct.image) {
       alert("All fields are required");
@@ -84,7 +79,6 @@ function App() {
     setShowAddModal(false);
   };
 
-  /* ================= SEARCH ================= */
   const handleSearch = () => {
     const results = products.filter((item) =>
       item.title.toLowerCase().includes(searchQuery.toLowerCase()),
@@ -97,7 +91,6 @@ function App() {
     setSearchQuery("");
   };
 
-  /* ================= CART ================= */
   const handleAddToCart = (item) => {
     setCartItems((prev) => [...prev, item]);
   };
@@ -183,18 +176,15 @@ function App() {
               )}
             </div>
 
-            {/* SEARCH */}
             <button className="search-btn" onClick={() => setShowSearch(true)}>
               🔍
             </button>
 
-            {/* CART */}
             <button className="cart-btn" onClick={handleOpenCart}>
               🛒
               <span className="cart-count">{cartItems.length}</span>
             </button>
 
-            {/* ADD */}
             <button className="add-btn" onClick={() => setShowAddModal(true)}>
               ➕ Add Item
             </button>
@@ -255,7 +245,6 @@ function App() {
         )}
       </section>
 
-      {/* EDIT MODAL */}
       {editingProduct && (
         <div className="modal-backdrop">
           <div className="modal">
@@ -291,7 +280,6 @@ function App() {
         </div>
       )}
 
-      {/* ADD MODAL */}
       {showAddModal && (
         <div className="modal-backdrop">
           <div className="modal">
@@ -330,7 +318,6 @@ function App() {
         </div>
       )}
 
-      {/* SEARCH MODAL */}
       {showSearchModal && (
         <div className="modal-backdrop">
           <div className="modal">
